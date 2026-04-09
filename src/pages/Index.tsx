@@ -45,7 +45,7 @@ const Index = () => {
         Select Your Location
       </h1>
 
-      <div className="flex w-full max-w-md flex-col items-stretch gap-4 md:max-w-4xl md:flex-row md:justify-center md:gap-6">
+      <div className="flex w-full max-w-lg flex-col items-stretch gap-4 md:max-w-5xl md:flex-row md:justify-center md:gap-8">
         {locations.map((loc, i) =>
           isMobile ? (
             <Collapsible
