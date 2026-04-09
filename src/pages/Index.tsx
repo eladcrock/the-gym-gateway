@@ -3,8 +3,8 @@ import location1Logo from "@/assets/location1-logo.png";
 import location2Logo from "@/assets/location2-logo.png";
 
 const locations = [
-  { name: "Benicia Boxing & Martial Arts", logo: location1Logo, href: "#" },
-  { name: "NorCal Boxing Club", logo: location2Logo, href: "#" },
+  { name: "Benicia Boxing & Martial Arts", subtitle: "Benicia", logo: location1Logo, href: "#" },
+  { name: "NorCal Boxing Club", subtitle: "Fairfield — Opening Soon", logo: location2Logo, href: "#" },
 ];
 
 const Index = () => {
