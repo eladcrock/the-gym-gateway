@@ -14,16 +14,16 @@ const Index = () => {
         Select Your Location
       </h1>
 
-      <div className="flex w-full max-w-4xl flex-col items-center gap-8 md:flex-row md:justify-center">
+      <div className="flex w-full max-w-4xl flex-row items-stretch justify-center gap-6">
         {locations.map((loc) => (
           <a
             key={loc.name}
             href={loc.href}
-            className="group w-full max-w-sm"
+            className="group w-full max-w-xs"
           >
-            <Card className="border border-primary/20 bg-card transition-all duration-300 hover:scale-[1.03] hover:border-primary hover:shadow-xl hover:shadow-primary/25">
-              <CardContent className="flex flex-col items-center gap-6 p-8">
-                <div className="flex h-44 w-44 items-center justify-center rounded-lg bg-foreground/95 p-4">
+            <Card className="h-full border border-primary/20 bg-card transition-all duration-300 hover:scale-[1.03] hover:border-primary hover:shadow-xl hover:shadow-primary/25">
+              <CardContent className="flex flex-col items-center gap-4 p-4">
+                <div className="flex h-48 w-full items-center justify-center overflow-hidden rounded-lg bg-foreground/95 p-2">
                   <img
                     src={loc.logo}
                     alt={`${loc.name} logo`}
@@ -31,7 +31,7 @@ const Index = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center gap-1">
-                  <span className="font-heading text-center text-lg font-semibold uppercase tracking-wider text-primary">
+                  <span className="font-heading text-center text-base font-semibold uppercase tracking-wider text-primary">
                     {loc.name}
                   </span>
                   {loc.subtitle && (
