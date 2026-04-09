@@ -30,9 +30,14 @@ const Index = () => {
                     className="h-full w-full object-contain"
                   />
                 </div>
-                <span className="font-heading text-center text-lg font-semibold uppercase tracking-wider text-primary">
-                  {loc.name}
-                </span>
+                <div className="flex flex-col items-center gap-1">
+                  <span className="font-heading text-center text-lg font-semibold uppercase tracking-wider text-primary">
+                    {loc.name}
+                  </span>
+                  {loc.subtitle && (
+                    <span className="text-sm text-muted-foreground">{loc.subtitle}</span>
+                  )}
+                </div>
               </CardContent>
             </Card>
           </a>
