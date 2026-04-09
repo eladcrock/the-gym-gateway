@@ -7,8 +7,8 @@ const locations = [
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-12 px-4 py-12">
-      <h1 className="font-heading text-3xl font-bold uppercase tracking-widest text-primary md:text-4xl">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-8 px-6 py-12 md:gap-12">
+      <h1 className="font-heading text-center text-2xl font-bold uppercase tracking-widest text-primary sm:text-3xl md:text-4xl">
         Select Your Location
       </h1>
 
