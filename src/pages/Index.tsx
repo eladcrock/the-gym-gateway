@@ -8,7 +8,7 @@ const locations = [
 const Index = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center gap-12 px-4 py-12">
-      <h1 className="text-3xl font-bold uppercase tracking-widest text-foreground md:text-4xl">
+      <h1 className="font-heading text-3xl font-bold uppercase tracking-widest text-primary md:text-4xl">
         Select Your Location
       </h1>
 
@@ -28,7 +28,7 @@ const Index = () => {
                     className="h-24 w-24 object-contain opacity-50"
                   />
                 </div>
-                <span className="text-lg font-semibold uppercase tracking-wider text-card-foreground">
+                <span className="font-heading text-lg font-semibold uppercase tracking-wider text-primary">
                   {loc.name}
                 </span>
               </CardContent>
