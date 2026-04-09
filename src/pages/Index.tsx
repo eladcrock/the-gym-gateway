@@ -15,7 +15,7 @@ const LocationCard = ({ loc }: { loc: typeof locations[0] }) => (
   <a href={loc.href} className="group w-full">
     <Card className="h-full border border-primary/20 bg-card transition-all duration-300 hover:scale-[1.03] hover:border-primary hover:shadow-xl hover:shadow-primary/25">
       <CardContent className="flex flex-col items-center gap-4 p-4">
-        <div className="flex h-48 w-full items-center justify-center overflow-hidden rounded-lg bg-foreground/95 p-2">
+        <div className="flex h-56 w-full items-center justify-center overflow-hidden rounded-lg bg-foreground/95 p-2 md:h-64">
           <img
             src={loc.logo}
             alt={`${loc.name} logo`}
@@ -45,7 +45,7 @@ const Index = () => {
         Select Your Location
       </h1>
 
-      <div className="flex w-full max-w-md flex-col items-stretch gap-4 md:max-w-4xl md:flex-row md:justify-center md:gap-6">
+      <div className="flex w-full max-w-lg flex-col items-stretch gap-4 md:max-w-5xl md:flex-row md:justify-center md:gap-8">
         {locations.map((loc, i) =>
           isMobile ? (
             <Collapsible
