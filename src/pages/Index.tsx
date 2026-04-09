@@ -3,8 +3,8 @@ import location1Logo from "@/assets/location1-logo.png";
 import location2Logo from "@/assets/location2-logo.png";
 
 const locations = [
-  { name: "Benicia Boxing & Martial Arts", logo: location1Logo, href: "#" },
-  { name: "NorCal Boxing Club", logo: location2Logo, href: "#" },
+  { name: "Benicia Boxing & Martial Arts", subtitle: "Benicia", logo: location1Logo, href: "#" },
+  { name: "NorCal Boxing Club", subtitle: "Fairfield — Opening Soon", logo: location2Logo, href: "#" },
 ];
 
 const Index = () => {
@@ -30,9 +30,14 @@ const Index = () => {
                     className="h-full w-full object-contain"
                   />
                 </div>
-                <span className="font-heading text-center text-lg font-semibold uppercase tracking-wider text-primary">
-                  {loc.name}
-                </span>
+                <div className="flex flex-col items-center gap-1">
+                  <span className="font-heading text-center text-lg font-semibold uppercase tracking-wider text-primary">
+                    {loc.name}
+                  </span>
+                  {loc.subtitle && (
+                    <span className="text-sm text-muted-foreground">{loc.subtitle}</span>
+                  )}
+                </div>
               </CardContent>
             </Card>
           </a>
