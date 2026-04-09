@@ -1,8 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
+import location1Logo from "@/assets/location1-logo.png";
+import location2Logo from "@/assets/location2-logo.svg";
 
 const locations = [
-  { name: "Location 1", logo: "/placeholder.svg", href: "#" },
-  { name: "Location 2", logo: "/placeholder.svg", href: "#" },
+  { name: "Benicia Boxing & Martial Arts", logo: location1Logo, href: "#" },
+  { name: "NorCal Boxing", logo: location2Logo, href: "#" },
 ];
 
 const Index = () => {
